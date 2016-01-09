@@ -77,14 +77,6 @@ class Scoreboard(NBAObject):
         return self.results['WinProbability']
 
     @property
-    def home_team_id(self):
-        return self.game_header['home_team_id']
-
-    @property
-    def visitor_team_id(self):
-        return self.game_header['visitor_team_id']
-
-    @property
     def teams_scores(self):
         teams = {}
         for line in self.line_score:
